@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Web Rumah Makan | Kelompok 5</title>
+  </head>
+  <body onscroll="addBackground()">
+    <nav class="fixed-top" id="nav">
+      <div class="nav__header">
+        <div class="logo nav__logo">
+          <a href="#">
+            <i class="ri-restaurant-line"></i>Warteg
+            <span>Pepabri</span>
+          </a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#contact">Kontak</a></li>
+        <li class="nav-item">
+          <button class="nav-link btn" id="shopping-cart-btn">
+            <i class="ri-shopping-bag-fill"></i>
+            <span id="cart-count">0</span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets/img/explore.png" alt="header" />
+      </div>
+      <div class="header__content">
+        <h1>Makanan yang memikat selera, <span> harga terjangkau !</span></h1>
+        <p class="section__description">
+          Nikmati makanan yang lezat dan terjangkau! Rasakan cita rasa autentik
+          yang memikat hati Anda tanpa harus merogoh kocek dalam-dalam.
+        </p>
+        <div class="header__btn">
+          <a href="#menu"><button class="btn">Pesan Sekarang</button></a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container special__container" id="menu">
+      <h2 class="section__header">Menu yang Tersedia</h2>
+      <p class="section__description">
+        Berikut adalah menu makanan & minuman yang tersedia di warteg Pepabri
+      </p>
+      <h5>Makanan</h5>
+      <div class="special__grid">
+        <div class="special__card">
+          <img src="assets/img/nasi-putih.png" alt="special" />
+          <h4>Nasi Putih</h4>
+          <div class="special__footer">
+            <p class="price">Rp. 5000</p>
+            <button
+              class="btn add-to-cart"
+              data-name="Nasi Putih"
+              data-price="5000"
+            >
+              Tambah
+            </button>
+          </div>
+        </div>
+        <div class="special__card">
+          <img src="assets/img/Telor.png" alt="special" />
+          <h4>Telur Dadar</h4>
+          <div class="special__footer">
+            <p class="price">Rp. 4000</p>
+            <button
+              class="btn add-to-cart"
+              data-name="Telur Dadar"
+              data-price="4000"
+            >
+              Tambah
+            </button>
+          </div>
+        </div>
+        <div class="special__card">
+          <img src="assets/img/Tempe_Orek.png" alt="special" />
+          <h4>Tempe Orek</h4>
+          <div class="special__footer">
+            <p class="price">Rp. 3000</p>
+            <button
+              class="btn add-to-cart"
+              data-name="Tempe Orek"
+              data-price="3000"
+            >
+              Tambah
+            </button>
+          </div>
+        </div>
+        <div class="special__card">
+          <img src="assets/img/Tongkol.png" alt="special" />
+          <h4>Ikan Tongkol Balado</h4>
+          <div class="special__footer">
+            <p class="price">Rp. 4000</p>
+            <button
+              class="btn add-to-cart"
+              data-name="Ikan Tongkol Balado"
+              data-price="4000"
+            >
+              Tambah
+            </button>
+          </div>
+        </div>
+        <div class="special__card">
+          <img src="assets/img/Ayam_Goreng.png" alt="special" />
+          <h4>Ayam Goreng</h4>
+          <div class="special__footer">
+            <p class="price">Rp. 8000</p>
+            <button
+              class="btn add-to-cart"
+              data-name="Ayam Goreng"
+              data-price="8000"
+            >
+              Tambah
+            </button>
+          </div>
+        </div>
+        <div class="special__card">
+          <img src="assets/img/kangkung1.png" alt="special" />
+          <h4>Sayur Kangkung</h4>
+          <div class="special__footer">
+            <p class="price">Rp. 4000</p>
+            <button
+              class="btn add-to-cart"
+              data-name="Sayur Kangkung"
+              data-price="4000"
+            >
+              Tambah
+            </button>
+          </div>
+        </div>
+        <div class="special__card">
+          <img src="assets/img/sayur_asem.png" alt="special" />
+          <h4>Sayur Asem</h4>
+          <div class="special__footer">
+            <p class="price">Rp. 5000</p>
+            <button
+              class="btn add-to-cart"
+              data-name="Sayur Asem"
+              data-price="5000"
+            >
+              Tambah
+            </button>
+          </div>
+        </div>
+        <div class="special__card">
+          <img src="assets/img/sayur_toge.png" alt="special" />
+          <h4>Tumis Toge</h4>
+          <div class="special__footer">
+            <p class="price">Rp. 3000</p>
+            <button
+              class="btn add-to-cart"
+              data-name="Tumis Toge"
+              data-price="3000"
+            >
+              Tambah
+            </button>
+          </div>
+        </div>
+        <div class="special__card">
+          <img src="assets/img/Oseng_Jamur.png" alt="special" />
+          <h4>Oseng Jamur</h4>
+          <div class="special__footer">
+            <p class="price">Rp. 4000</p>
+            <button
+              class="btn add-to-cart"
+              data-name="Oseng Jamur"
+              data-price="4000"
+            >
+              Tambah
+            </button>
+          </div>
+        </div>
+      </div>
+      <h5>Minuman</h5>
+      <div class="special__grid">
+        <div class="special__card">
+          <img src="assets/img/teh.png" alt="special" />
+          <h4>Es Teh Manis</h4>
+          <div class="special__footer">
+            <p class="price">Rp. 5000</p>
+            <button
+              class="btn add-to-cart"
+              data-name="Es Teh Manis"
+              data-price="5000"
+            >
+              Tambah
+            </button>
+          </div>
+        </div>
+        <div class="special__card">
+          <img src="assets/img/Es_jeruk.png" alt="special" />
+          <h4>Es Jeruk</h4>
+          <div class="special__footer">
+            <p class="price">Rp. 5000</p>
+            <button
+              class="btn add-to-cart"
+              data-name="Es Jeruk"
+              data-price="5000"
+            >
+              Tambah
+            </button>
+          </div>
+        </div>
+        <div class="special__card">
+          <img src="assets/img/jus_alpukat.png" alt="special" />
+          <h4>Jus Alpukat</h4>
+          <div class="special__footer">
+            <p class="price">Rp. 10000</p>
+            <button
+              class="btn add-to-cart"
+              data-name="Jus Alpukat"
+              data-price="10000"
+            >
+              Tambah
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-form" id="contact">
+      <h2 class="heading">Kontak</h2>
+
+      <div class="contactForm">
+        <form action="#">
+          <h3 class="sub-heading">Hubungi Kami !</h3>
+          <p class="para para2">
+            Anda bisa menghubungi kami lewat form berikut atau pun pada kontak
+            yang tertera.
+          </p>
+          <input type="text" class="input" placeholder="nama anda" />
+          <input type="text" class="input" placeholder="alamat anda" />
+          <textarea
+            class="input"
+            name="pesan"
+            cols="30"
+            rows="5"
+            placeholder="Pesanan"
+          ></textarea>
+          <input type="submit" class="input submit btn" value="Kirim Pesanan" />
+        </form>
+
+        <div class="map-container">
+          <div class="mapBg"></div>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.4568486160524!2d107.30901701471057!3d-6.295599995429887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68f75412c92953%3A0xc8f1695bcf181f5a!2sJl.%20HS.%20Ronggo%20Waluyo%2C%20Puseurjaya%2C%20Kec.%20Telukjambe%20Tim.%2C%20Kabupaten%20Karawang%2C%20Jawa%20Barat%2041361!5e0!3m2!1sen!2sid!4v1695627657575!5m2!1sen!2sid"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <div class="contactMethod">
+        <div class="method">
+          <i class="fa-solid fa-location-dot contactIcon"></i>
+          <article class="text">
+            <h6 class="sub-heading">Lokasi</h6>
+            <p class="para">
+              Jl. HS.Ronggo Waluyo, Telukjambe Timur, Karawang,
+            </p>
+          </article>
+        </div>
+
+        <div class="method">
+          <i class="fa-solid fa-envelope contactIcon"></i>
+          <article class="text">
+            <h6 class="sub-heading">Email</h6>
+            <p class="para">Email: wartegpepabri01@gmail.com</p>
+          </article>
+        </div>
+
+        <div class="method">
+          <i class="fa-solid fa-phone contactIcon"></i>
+          <article class="text">
+            <h6 class="sub-heading">No Telpon</h6>
+            <p class="para">+62 8123 4567 890</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="modal fade"
+      id="shoppingCartModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="shoppingCartModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="shoppingCartModalLabel">
+              Keranjang Pesanan Anda🍴
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ul id="cart-items-list" class="list-group"></ul>
+            <p>Total Harga: <span id="total-amount">Rp0</span></p>
+          </div>
+          <div class="modal-footer">
+            <button id="order-button" class="btn btn-primary">
+              Pesan Sekarang
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal konfirmasi pemesanan -->
+    <div
+      class="modal fade"
+      id="orderConfirmationModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="orderConfirmationModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="orderConfirmationModalLabel">
+              Makanan telah dipesan
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Terima kasih atas pesanan Anda. Makanan Anda sedang diproses.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal untuk keranjang kosong -->
+    <div
+      class="modal fade"
+      id="emptyCartModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="emptyCartModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="emptyCartModalLabel">
+              Keranjang Kosong
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Keranjang belanja Anda kosong. Silakan tambahkan item ke keranjang
+            sebelum memesan.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Tutup
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bar mt-4">
+      Copyright © 2024 Kelompok 5. All rights reserved.
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script
+      src="https://kit.fontawesome.com/aa7454d09f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
